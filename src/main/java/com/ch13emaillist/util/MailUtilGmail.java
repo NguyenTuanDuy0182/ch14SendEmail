@@ -10,7 +10,7 @@ public class MailUtilGmail {
             "ngtduy4240@gmail.com";
 
     private static final String GMAIL_PASSWORD =
-            "vfkk jtdg ynhp kwlm";
+            "xwja dxpw ejwi ebuw";
 
     public static void sendMail(String to, String from,
                                 String subject, String body,
