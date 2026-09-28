@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+    <persistence-unit name="emailListPU"
+                      transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+        <class>com.ch13emaillist.model.User</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver"
+                      value="org.postgresql.Driver"/>
+
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:postgresql://dpg-dasucp8jo6nc73dfs3t0-a.singapore-postgres.render.com:5432/userdb_o8pp?sslmode=require"/>
+
+            <property name="javax.persistence.jdbc.user"
+                      value="emaillist_user"/>
+
+            <property name="javax.persistence.jdbc.password"
+                      value="2GjyDa93OgnZfdg8IhjiW4Syd2LBQAO6"/>
+
+            <property name="eclipselink.target-database"
+                      value="org.eclipse.persistence.platform.database.PostgreSQLPlatform"/>
+
+            <property name="javax.persistence.schema-generation.database.action"
+                      value="none"/>
+        </properties>
+    </persistence-unit>
+</persistence>
